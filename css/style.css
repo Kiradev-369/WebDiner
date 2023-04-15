@@ -94,6 +94,7 @@ header .header__menu {
   font-weight: 700;
   color: #fff;
 }
+/* * SEARCH */
 .header__menu .header__search {
   position: relative;
 }
@@ -103,7 +104,7 @@ header .header__menu {
   padding: 10px 50px 10px 20px;
   height: 45px;
   font-size: 16px;
-  color: #c2d0da;
+  color: rgb(22 28 45 / 70%);
   border: none;
   font-weight: 400;
   border-radius: 6px;
@@ -136,6 +137,61 @@ header .header__menu {
   color: #fbfdfb;
   font-size: 1.95em;
   padding: 0 8px;
+}
+
+/* * OVERLAY  */
+.overlay.open {
+  display: flex;
+  justify-content: center;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(6 3 0 / 77%);
+  overflow-y: scroll;
+}
+.overlay__nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-30%);
+}
+.overlay .overlay__nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+}
+.overlay .overlay__nav ul li {
+  line-height: 3em;
+}
+.overlay .overlay__nav ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.overlay .overlay__nav ul li:hover a {
+  color: #ff6600;
+}
+.overlay .overlay__close {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  right: 72px;
+  top: 55px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
 }
 /* * CAROUSEL  */
 .carousel {

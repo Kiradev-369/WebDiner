@@ -61,12 +61,30 @@
             <div class="header__switcher">
               <i class="fa-regular fa-moon"></i>
             </div>
-            <!-- * MENU  -->
+            <!-- * BTN MENU  -->
             <div class="header__btn">
-              <button type="button">
+              <button type="button" class="js-navbar-menu-btn">
                 <i class="fa-solid fa-bars"></i>
               </button>
             </div>
+          </div>
+          <!-- * OVERLAY  -->
+          <div class="overlay js-overlay">
+            <button type="button" class="overlay__close js-overlay-close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <nav class="overlay__nav">
+              <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog Posts</a></li>
+                <li><a href="#">404 Page</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Lading page</a></li>
+              </ul>
+            </nav>
           </div>
         </nav>
       </div>
@@ -374,5 +392,7 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <!--* MAIN JS  -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
