@@ -56,6 +56,14 @@ body {
 .title--white h3 {
   color: #fff;
 }
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(22 28 45 / 70%);
+  font-family: 'Quicksand', sans-serif;
+}
 .title--white p {
   color: #ffdfc9;
   font-size: 18px;
@@ -97,6 +105,7 @@ header .header__menu {
 /* * SEARCH */
 .header__menu .header__search {
   position: relative;
+  border-radius: 6px;
 }
 .header__menu .header__search input {
   display: flex;
@@ -137,6 +146,44 @@ header .header__menu {
   color: #fbfdfb;
   font-size: 1.95em;
   padding: 0 8px;
+}
+/* * LIGHT MODE */
+#myBody{
+  background-color: #fff;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+/* * DARK MODE  */
+.dark#myBody {
+  background-color: #232220;
+}
+.dark h2, .dark .categoryOther__info h4 a {
+  color: #fff;
+}
+.dark p{
+  color: #c2d0da;
+}
+.dark .header__search input{
+  background-color: #232220;
+  border: none;
+  color: #c2d0da;
+}
+.dark .categoryMain{
+  background-color: #282828;
+}
+.dark .categoryOther__item{
+  background-color: #232220;
+  border: 1px solid;
+}
+.dark #switchButton .fa-sun {
+  display: block;
+}
+.dark #switchButton .fa-moon {
+  display: none;
 }
 
 /* * OVERLAY  */
@@ -233,12 +280,6 @@ header .header__menu {
 }
 .aboutUs__right {
   padding: 0 15px 0 48px;
-}
-.aboutUs__right p {
-  color: #161c2d;
-  font-family: Quicksand;
-  font-size: 18px;
-  line-height: 28px;
 }
 /* * BOOKING  */
 .booking {
@@ -368,11 +409,11 @@ header .header__menu {
   background-color: #ff6600;
   transition: 0.3s ease-in-out;
 }
-.categoryOther__item p {
+/* .categoryOther__item p {
   font-size: 18px;
   line-height: 28px;
   color: rgb(22 28 45 / 70%);
-}
+} */
 .categoryOther__icon i {
   width: 70px;
   height: 70px;
@@ -384,12 +425,12 @@ header .header__menu {
   font-size: 25px;
   transition: 0.3s ease-in-out;
 }
-.categoryOther__info > p {
+/* .categoryOther__info > p {
   font-size: 18px;
   margin: 0;
   line-height: 28px;
   color: rgb(22 28 45 / 70%);
-}
+} */
 .categoryOther__info h4 a {
   font-size: 24px;
   font-weight: 600;
