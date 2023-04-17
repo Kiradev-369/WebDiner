@@ -109,12 +109,10 @@ header .header__menu {
 }
 .header__menu .header__search input {
   display: flex;
-  flex: 1;
   padding: 10px 50px 10px 20px;
   height: 45px;
   font-size: 16px;
   color: rgb(22 28 45 / 70%);
-  border: none;
   font-weight: 400;
   border-radius: 6px;
   position: relative;
@@ -127,7 +125,6 @@ header .header__menu {
   position: absolute;
   right: 20px;
   font-size: 15px;
-  top: 15px;
   cursor: pointer;
 }
 .header__menu .header__switcher i {
@@ -409,11 +406,7 @@ header .header__menu {
   background-color: #ff6600;
   transition: 0.3s ease-in-out;
 }
-/* .categoryOther__item p {
-  font-size: 18px;
-  line-height: 28px;
-  color: rgb(22 28 45 / 70%);
-} */
+
 .categoryOther__icon i {
   width: 70px;
   height: 70px;
@@ -425,12 +418,7 @@ header .header__menu {
   font-size: 25px;
   transition: 0.3s ease-in-out;
 }
-/* .categoryOther__info > p {
-  font-size: 18px;
-  margin: 0;
-  line-height: 28px;
-  color: rgb(22 28 45 / 70%);
-} */
+
 .categoryOther__info h4 a {
   font-size: 24px;
   font-weight: 600;
@@ -439,4 +427,30 @@ header .header__menu {
   display: block;
   color: #232121;
   text-decoration: none;
+}
+/* * BACK TO TOP  */
+.backToTop{
+  position: fixed;
+    bottom: 55px;
+    right: 20px;
+    z-index: 99;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    background: #ff6600;
+    padding: 0;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    opacity: 0;
+}
+.backToTop:hover{
+  color: #fff;
+}
+.cd-top--is-visible {
+  opacity: 1;
 }
