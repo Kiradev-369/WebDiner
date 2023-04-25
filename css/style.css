@@ -126,7 +126,6 @@ header .header__menu {
   position: absolute;
   right: 20px;
   font-size: 15px;
-  top: 15px;
   cursor: pointer;
 }
 
@@ -148,6 +147,12 @@ header .header__menu {
   font-size: 1.95em;
   padding: 0 8px;
 }
+
+.carousel__info {
+  max-width: 600px;
+  text-align: left;
+}
+
 
 /* * LIGHT MODE */
 #myBody {
@@ -342,9 +347,6 @@ header .header__menu {
 }
 
 /* * ABOUT US  */
-.aboutUs__left {
-  padding: 0 15px;
-}
 
 .aboutUs__right {
   padding: 0 15px 0 48px;
@@ -396,6 +398,8 @@ header .header__menu {
 .restaurants__img {
   position: relative;
   padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .restaurants__img::after {
@@ -1035,3 +1039,32 @@ div#small-dialog iframe {
   }
 }
 /*-- //play icon animation --*/
+
+
+/* * BACK TO TOP  */
+
+.backToTop {
+  position: fixed;
+  bottom: 55px;
+  right: 20px;
+  z-index: 99;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 18px;
+  background: #ff6600;
+  padding: 0;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  opacity: 0;
+}
+.backToTop:hover {
+  color: #fff;
+}
+.cd-top--is-visible {
+  opacity: 1;
+}
