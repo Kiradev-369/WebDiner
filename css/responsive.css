@@ -1,20 +1,18 @@
-/* * RESPONSIVE HEADER   */
-
+@media screen and (max-width: 1190px) {
+  .carousel__info h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
 @media screen and (max-width: 1180px) {
   .h3-title.two {
     font-size: 32px;
     line-height: 40px;
   }
-  .restaurants__img {
-    margin: 40px 15px;
-  }
-  .restaurants__img img {
-    height: 200px;
-  }
-  .categoryOther__info h4 a{
+  .categoryOther__info h4 a {
     font-size: 20px;
   }
-  .categoryOther__item p{
+  .categoryOther__item p {
     font-size: 15px;
     margin: 0;
   }
@@ -28,8 +26,18 @@
     font-size: 18px;
   }
   .carousel__info h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .restaurants__img {
+    min-height: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .carousel {
+    min-height: 600px;
+    height: 600px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -47,20 +55,20 @@
   p {
     font-size: 16px;
     line-height: 26px;
-}
-.categoryMain__info h4{
+  }
+  .categoryMain__info h4 {
     font-size: 18px;
     line-height: 28px;
-}
-.categoryMain__info span{
+  }
+  .categoryMain__info span {
     font-size: 16px !important;
-}
-.restaurants__left{
+  }
+  .restaurants__left {
     padding-right: 0;
-}
-.restaurants__right {
+  }
+  .restaurants__right {
     padding-left: 0;
-}
+  }
 }
 @media screen and (max-width: 480px) {
   .carousel {
@@ -82,11 +90,10 @@
     font-size: 26px !important;
     line-height: 36px;
   }
-  .categoryMain__info{
+  .categoryMain__info {
     bottom: 0;
     left: auto;
     width: 90%;
     transform: translateY(10%);
   }
-
 }
