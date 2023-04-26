@@ -33,11 +33,19 @@
     min-height: 200px;
     height: 200px;
   }
+  .restaurants__evaluate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 10px;
+  }
 }
 @media screen and (max-width: 800px) {
   .carousel {
     min-height: 600px;
     height: 600px;
+  }
+  .categoryMain__info {
+    width: 90%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -82,9 +90,6 @@
     font-size: 28px;
     line-height: 38px;
   }
-  .aboutUs {
-    padding: 0 !important;
-  }
   .h3-title,
   .h3-title.two {
     font-size: 26px !important;
@@ -95,5 +100,8 @@
     left: auto;
     width: 90%;
     transform: translateY(10%);
+  }
+  .categoryOther__item{
+    padding: 30px 30px;
   }
 }
