@@ -128,15 +128,6 @@ header .header__menu {
   cursor: pointer;
 }
 
-.header__menu .header__switcher i {
-  color: #eee;
-  width: 20px;
-  height: 20px;
-  font-size: 24px;
-  line-height: 20px;
-  text-align: center;
-}
-
 .header__content .header__btn button {
   outline: none;
   border: none;
@@ -156,16 +147,106 @@ header .header__menu {
 #myBody {
   background-color: #fff;
 }
-
-#switchButton .fa-sun {
-  display: none;
+#switchButton {
+  width: 24px;
+  height: 24px;
+  padding: 1px 0;
 }
 
-#switchButton .fa-moon {
+#switchButton .gg__moon {
   display: block;
+  color: #eee;
 }
 
-/* * DARK MODE  */
+#switchButton .gg__sun {
+  display: none;
+  color: #eee;
+}
+
+.gg__moon {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-135deg) scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-bottom: 2px solid transparent;
+}
+
+.gg__moon:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  width: 12px;
+  height: 18px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 2px;
+  top: 8px;
+  left: 2px;
+}
+
+.gg__moon, .gg__moon:after {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+
+/* *DARK MODE  */
+
+.dark #switchButton .gg__sun {
+  display: block;
+  color: #eee;
+}
+
+.dark #switchButton .gg__moon {
+  display: none;
+  color: #eee;
+}
+
+.gg__sun {
+  position: relative;
+  transform: scale(var(--ggs, 1));
+  height: 24px;
+  background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat
+      5px -6px/2px 6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px
+      6px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px
+      2px,
+    linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px
+      2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
+}
+
+.gg__sun:before {
+  transform: rotate(-45deg);
+}
+
+.gg__sun:after {
+  transform: rotate(45deg);
+}
+
+.gg__sun:after, .gg__sun:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
+}
+
+.gg__sun, .gg__sun:after, .gg__sun:before {
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+}
+
 .dark#myBody {
   background-color: #232220;
 }
@@ -241,6 +322,10 @@ header .header__menu {
 .dark #switchButton .fa-moon {
   display: none;
 }
+.dark .footer form input,
+.dark .footer__social a {
+  background-color: #232220;
+}
 
 /* * OVERLAY  */
 .overlay.open {
@@ -252,26 +337,25 @@ header .header__menu {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   background: rgb(6 3 0 / 77%);
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 .overlay-scale {
   visibility: hidden;
   opacity: 0;
   transform: scale(0.9);
-  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  transition: transform 0.5s, opacity 0.5s, visibility 0s 0.5s;
 }
 
 .overlay-scale.open {
   visibility: visible;
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.4s, opacity 0.4s;
+  transition: transform 0.5s, opacity 0.5s;
 }
-
 
 .overlay__nav {
   text-align: center;
@@ -750,7 +834,6 @@ div#small-dialog iframe {
   opacity: 0;
 }
 
-
 /* BLOG */
 .blog {
   background-color: #f7f7f7;
@@ -804,7 +887,6 @@ div#small-dialog iframe {
   color: #232121;
   opacity: 0.9;
 }
-
 
 /* TESTIMONIALS */
 .owl-carousel .testimonials__body {
