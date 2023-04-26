@@ -4,6 +4,7 @@
     line-height: 58px;
   }
 }
+
 @media screen and (max-width: 1180px) {
   .h3-title.two {
     font-size: 32px;
@@ -13,10 +14,20 @@
     font-size: 20px;
   }
   .categoryOther__item p {
-    font-size: 15px;
+    /* font-size: 15px; */
     margin: 0;
   }
 }
+
+@media screen and (max-width: 1080px) {
+  .news__text h3 {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 100%;
+  }
+}
+
+
 @media screen and (max-width: 992px) {
   .aboutUs__right,
   .aboutUs__left {
@@ -38,7 +49,34 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px 10px;
   }
+  .number {
+    margin-top: 0;
+  }
+  .footer__social {
+    text-align: center;
+  }
+  .footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
+
+@media screen and (max-width: 991px) {
+  .item__body > a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .footer__copyright {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .video__cover {
+    min-height: 400px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .carousel {
     min-height: 600px;
@@ -48,6 +86,27 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 736px) {
+  .news__text h3 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .number__item {
+    padding: 30px 10px;
+  }
+  .number__item p:first-of-type {
+    font-size: 2em;
+  }
+  .video__cover {
+    min-height: 350px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .header__menu .header__search {
     display: none;
@@ -77,6 +136,9 @@
   .restaurants__right {
     padding-left: 0;
   }
+  .number__item p{
+    line-height: 1.6;
+  }
 }
 @media screen and (max-width: 480px) {
   .carousel {
@@ -103,5 +165,25 @@
   }
   .categoryOther__item{
     padding: 30px 30px;
+  }
+  .btn-style{
+    padding: 10px 21px;
+  }
+  .number__item p:last-of-type {
+    font-size: 0.9em;
+  }
+
+}
+
+@media screen and (max-width: 415px) {
+  .news__text h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .video__cover {
+    min-height: 300px;
   }
 }

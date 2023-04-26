@@ -15,7 +15,6 @@ body {
 
 p {
   font-size: 18px;
-  /* line-height: 28px; */
   color: rgba(22, 28, 45, 0.7);
 }
 
@@ -584,35 +583,6 @@ header .header__menu {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 1080px) {
-  .news__text h3 {
-    font-size: 40px;
-    line-height: 50px;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  .news__text h3 {
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .btn-style {
-    padding: 10px 21px;
-  }
-}
-
-@media screen and (max-width: 415px) {
-  .news__text h3 {
-    font-size: 26px;
-    line-height: 34px;
-  }
-}
-
 /* NUMBER */
 .number {
   margin-top: -70px;
@@ -658,28 +628,6 @@ header .header__menu {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0;
-}
-
-@media screen and (max-width: 992px) {
-  .number {
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .number__item {
-    padding: 30px 10px;
-  }
-
-  .number__item p:first-of-type {
-    font-size: 2em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .number__item p:last-of-type {
-    font-size: 0.9em;
-  }
 }
 
 /* VIDEO */
@@ -788,23 +736,6 @@ div#small-dialog iframe {
   opacity: 0;
 }
 
-@media screen and (max-width: 900px) {
-  .video__cover {
-    min-height: 400px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .video__cover {
-    min-height: 350px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .video__cover {
-    min-height: 300px;
-  }
-}
 
 /* BLOG */
 .blog {
@@ -860,12 +791,6 @@ div#small-dialog iframe {
   opacity: 0.9;
 }
 
-@media screen and (max-width: 991px) {
-  .item__body > a {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
 
 /* TESTIMONIALS */
 .owl-carousel .testimonials__body {
@@ -1022,22 +947,6 @@ div#small-dialog iframe {
 
 .footer__copyright a:hover {
   color: #fff;
-}
-
-@media screen and (max-width: 992px) {
-  .footer__social {
-    text-align: center;
-  }
-  .footer h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .footer__copyright {
-    text-align: center;
-  }
 }
 
 /*-- play icon animation --*/
