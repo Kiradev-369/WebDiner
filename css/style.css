@@ -328,11 +328,6 @@ header .header__menu {
 }
 
 /* * OVERLAY  */
-.overlay.open {
-  display: flex;
-  justify-content: center;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -361,7 +356,7 @@ header .header__menu {
   text-align: center;
   position: relative;
   top: 50%;
-  transform: translateY(-30%);
+  transform: translateY(-50%);
 }
 
 .overlay .overlay__nav ul {
@@ -373,7 +368,7 @@ header .header__menu {
 }
 
 .overlay .overlay__nav ul li {
-  line-height: 3em;
+  line-height: 2.5em;
 }
 
 .overlay .overlay__nav ul li a {
@@ -436,6 +431,7 @@ header .header__menu {
   line-height: 28px;
   color: #fff;
   margin-top: 24px;
+  margin-bottom: 0;
 }
 
 .carousel__info a i {

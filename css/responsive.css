@@ -82,8 +82,18 @@
     min-height: 600px;
     height: 600px;
   }
+  .carousel__info h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
   .categoryMain__info {
     width: 90%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .overlay .overlay__nav ul li a {
+    font-size: 16px;
   }
 }
 
@@ -147,6 +157,9 @@
   }
   .carousel__info {
     margin-top: 50px;
+  }
+  .carousel__info a {
+    margin-bottom: 28px;
   }
   .carousel__info h1 {
     font-size: 28px;
