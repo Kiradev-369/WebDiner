@@ -249,15 +249,29 @@ header .header__menu {
 }
 
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgb(6 3 0 / 77%);
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
+
+.overlay-scale {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.4s, opacity 0.4s;
+}
+
 
 .overlay__nav {
   text-align: center;
